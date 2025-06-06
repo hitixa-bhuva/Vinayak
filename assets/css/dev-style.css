@@ -92,3 +92,13 @@ input[type="file"] {
 table.dataTable.stripe tbody tr.odd, table.dataTable.display tbody tr.odd {
     background-color: #f9f9f9;
 }
+
+/* responsive styel */
+@media (max-width: 425px) {
+  .image-upload-wrapper {
+    width: 100%;
+  }
+  .video-upload-wrapper{
+    width: 100%;
+  }
+}
