@@ -2,7 +2,7 @@
   if (localStorage.getItem("color"))
     $("#color").attr(
       "href",
-      "../assets/css/" + localStorage.getItem("color") + ".css"
+      "assets/css/" + localStorage.getItem("color") + ".css"
     );
   if (localStorage.getItem("dark")) $("body").attr("class", "dark-only");
   $(
@@ -21,7 +21,7 @@
       localStorage.setItem("primary", primary);
       localStorage.setItem("secondary", secondary);
       localStorage.removeItem("dark");
-      $("#color").attr("href", "../assets/css/" + color + ".css");
+      $("#color").attr("href", "assets/css/" + color + ".css");
       $(".dark-only").removeClass("dark-only");
       location.reload(true);
     });
@@ -137,7 +137,7 @@
           );
           $(".logo-wrapper")
             .find("img")
-            .attr("src", "../assets/images/logo/logo.png");
+            .attr("src", "assets/images/logo/logo.png");
           localStorage.setItem("page-wrapper", "horizontal-wrapper");
           break;
         }
