@@ -141,23 +141,26 @@
                   <i class="fa fa-home text-white" aria-hidden="true"></i>
                   <span class="lan-2">Dasboard</span></a>
                 </li>
-                <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
-                  <i class="fa fa-calendar text-white" aria-hidden="true"></i>
-                    <span class="lan-4">Problem</span></a>
-                  <ul class="sidebar-submenu">
-                    <li><a href="Problem-list.html"><i class="fa fa-list text-white me-2" aria-hidden="true"></i>Problem List</a></li>
-                  </ul>
-                </li>
-                <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
-                  <i class="fa fa-newspaper-o text-white" aria-hidden="true"></i>
-                  <span class="lan-5">Service</span></a>
-                  <ul class="sidebar-submenu">
-                    <li><a href="AddService.html"><i class="fa fa-plus-square text-white me-2" aria-hidden="true"></i> Add Service</a></li>
-                     <li><a href="ServiceRequest-list.html"><i class="fa fa-plus-square text-white me-2" aria-hidden="true"></i>  Service Request List</a></li>
-                    
-                    <li><a href="ServiceReport-list.html"><i class="fa fa-list text-white me-2" aria-hidden="true"></i>Service Report</a></li>
-                  </ul>
-                </li>
+                <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i>
+                     <a class="sidebar-link" href="Problem-list.html">
+                     <i class="fa fa-home text-white" aria-hidden="true"></i>
+                     <span class="lan-2">Problem List</span></a>
+                  </li>
+                <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i>
+                     <a class="sidebar-link" href="ServiceRequest-list.html">
+                     <i class="fa fa-home text-white" aria-hidden="true"></i>
+                     <span class="lan-2">Service Request List</span></a>
+                  </li>
+                  <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i>
+                     <a class="sidebar-link" href="ServiceReport-list.html">
+                     <i class="fa fa-home text-white" aria-hidden="true"></i>
+                     <span class="lan-2">Service Report</span></a>
+                  </li>
+                  <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i>
+                     <a class="sidebar-link" href="service-status.html">
+                     <i class="fa fa-home text-white" aria-hidden="true"></i>
+                     <span class="lan-2">Service Status</span></a>
+                  </li>
                <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i>
                   <a class="sidebar-link" href="Working-Service.html">
                   <i class="fa fa-home text-white" aria-hidden="true"></i>
@@ -169,9 +172,14 @@
                   <span class="lan-2">Completed Service</span></a>
                 </li> 
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i>
-                  <a class="sidebar-link" href="Plumber.html">
+                  <a class="sidebar-link" href="Plumberlist.html">
                   <i class="fa fa-home text-white" aria-hidden="true"></i>
                   <span class="lan-2">Plumber</span></a>
+                </li> 
+                <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i>
+                  <a class="sidebar-link" href="Plumberreport.html">
+                  <i class="fa fa-home text-white" aria-hidden="true"></i>
+                  <span class="lan-2">Plumber Report</span></a>
                 </li> 
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i>
                   <a class="sidebar-link" href="Payment.html">
@@ -190,7 +198,7 @@
             <div class="page-title">
               <div class="row">
                 <div class="col-6">
-                  <h4>Plumber Add</h4>
+                  <h4>Add Plumber </h4>
                 </div>
                 <div class="col-6">
                   <ol class="breadcrumb">
@@ -214,7 +222,7 @@
                       <div class="row">
                         <div class="col-sm-6">
                           <div class="mb-3">
-                            <label class="required-validation">Name</label>
+                            <label class="required-validation">Customer Name</label>
                             <input class="form-control" type="text" placeholder="Name">
                           </div>
                         </div>
@@ -236,7 +244,7 @@
                             <input class="form-control" type="number" placeholder="Whatsapp Number">
                           </div>
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-sm-6">
                           <div class="mb-3">
                             <label class="required-validation">State</label>
                             <select class="form-select">
@@ -254,30 +262,96 @@
                             </select>
                           </div>
                         </div>
-                        <div class="col-sm-4">
-                          <div class="mb-3">
-                            <label class="required-validation">City</label>
-                            <select class="form-select">
-                              <option>Select An Option</option>
-                              <option>Ahmedabad</option>
-                              <option>Surat</option>
-                              <option>Vadodara</option>
-                              <option>Rajkot</option>
-                              <option>Jamnagar</option>
-                              <option>Bhavnagar</option>
-                              <option>Gandhinagar</option>
-                              <option>Junagadh</option>
-                              <option>Nadiad</option>
-                              <option>Morbi</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-sm-4">
+                         <div class="col-sm-6">
                           <div class="mb-3">
                             <label class="required-validation">Pincode </label>
                             <input class="form-control" type="number" placeholder="Pincode ">
                           </div>
                         </div>
+                        <div class="col-12 mb-3">
+                           <div class="card-wrapper border rounded-3 light-card checkbox-checked mt-3">
+                             <h4>Select City</h4>
+                               <div class="card-body">
+                             <div class="row mb-3">
+                               <div class="col-md-12">
+                                   <label class="form-label" for="MaltipleDropdown">City<span class="txt-danger">*</span></label>
+                                   <select class="form-select" id="MaltipleDropdown">
+                                       <option selected="">Select Option</option>
+                                      <option>Ahmedabad</option>
+                                      <option>Surat</option>
+                                      <option>Vadodara</option>
+                                      <option>Rajkot</option>
+                                      <option>Jamnagar</option>
+                                      <option>Bhavnagar</option>
+                                      <option>Gandhinagar</option>
+                                      <option>Junagadh</option>
+                                      <option>Nadiad</option>
+                                      <option>Morbi</option>
+                                   </select>
+                               </div>
+                           </div>
+                            
+                           <!-- Selected Items Box -->
+                           <div class="row">
+                             <div class="col-md-12">
+                                 <label id="selectedItemsLabel" class="form-label text-muted" s="">Selected Items:</label>
+                                 <div class="border p-3" id="itemsContainer" style="min-height: 50px; border-radius: 5px;">
+                                     <p class="text-muted mb-0" id="placeholder" style="display: block;">No items selected.</p>
+                                 </div>
+                             </div>
+                         </div>
+                               </div>
+                    <!--Js of category select start-->
+                           <script>
+                             const dropdown = document.getElementById('MaltipleDropdown');
+                             const itemsContainer = document.getElementById('itemsContainer');
+                             const placeholder = document.getElementById('placeholder');
+                    
+                             dropdown.addEventListener('change', function () {
+                                 const selectedValue = this.options[this.selectedIndex].text; // Get text of the selected option
+                    
+                                 if (selectedValue && selectedValue !== "Select Category") {
+                                     // Check if the item already exists in the list
+                                     const existingItem = Array.from(itemsContainer.children).find(
+                                         (child) => child.dataset.value === selectedValue
+                                     );
+                    
+                                     if (!existingItem) {
+                                         // Hide placeholder text
+                                         placeholder.style.display = 'none';
+                    
+                                         // Create a new list item
+                                         const itemDiv = document.createElement('div');
+                                         itemDiv.className = 'badge bg-primary me-2 mb-2 d-inline-flex align-items-center';
+                                         itemDiv.dataset.value = selectedValue;
+                    
+                                         const itemText = document.createElement('span');
+                                         itemText.textContent = selectedValue;
+                    
+                                         const removeButton = document.createElement('button');
+                                         removeButton.className = 'btn-close btn-close-white ms-2';
+                                         removeButton.style.fontSize = '0.8rem';
+                                         removeButton.addEventListener('click', function () {
+                                             itemDiv.remove();
+                    
+                                             // Show placeholder if no items remain
+                                             if (itemsContainer.children.length === 1) {
+                                                 placeholder.style.display = 'block';
+                                             }
+                                         });
+                    
+                                         itemDiv.appendChild(itemText);
+                                         itemDiv.appendChild(removeButton);
+                                         itemsContainer.appendChild(itemDiv);
+                                     }
+                    
+                                     // Clear the dropdown
+                                     this.value = '';
+                                 }
+                             });
+                         </script>
+                         </div>
+                         </div>
                       </div>
                       <div class="row">
                         <div class="col-12">

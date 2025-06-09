@@ -195,8 +195,27 @@
             </div>
         <!-- Page Sidebar Ends-->
         <div class="page-body">
+          <div class="container-fluid">
+            <div class="page-title">
+              <div class="row">
+                <div class="col-6">
+                  <h4>Service Status</h4>
+                </div>
+                <div class="col-6">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">                                       
+                        <svg class="stroke-icon">
+                          <use href="assets/svg/icon-sprite.svg#stroke-home"></use>
+                        </svg></a></li>
+                    <!-- <li class="breadcrumb-item">Service Status</li> -->
+                    <li class="breadcrumb-item active">Service Status</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
             <div class="container-fluid">
-            <div class="row">
+             <div class="row">
               <!-- Filter Button Start -->
               <div class="col-lg-12 d-flex justify-content-start ms-md-auto mb-3 mt-3">
                 <button class="btn btn-primary btn-lg" type="button" data-bs-toggle="tooltip" title="btn btn-success btn-lg" id="filter-button">
@@ -217,7 +236,7 @@
                   <div class="card-body basic-wizard important-validation">
                     <div id="msform p-3">
                       <form class="stepper-one row needs-validation custom-input" novalidate=""> 
-                        <div class="col-md-4 position-relative">
+                        <div class="col-md-3 position-relative">
                                  <label class="form-label" for="validationTooltip04">Problem</label>
                                  <select class="form-select" id="validationTooltip04" required>
                                     <option selected disabled value="">Select a Plumbing Problem...</option>
@@ -234,7 +253,7 @@
                                  </select>
                                  <div class="invalid-tooltip">Please select a valid Problem.</div>
                               </div>
-                              <div class="col-md-4 position-relative">
+                              <div class="col-md-3 position-relative">
                                  <label class="form-label" for="stateSelect">State</label>
                                  <select class="form-select" id="stateSelect" required>
                                     <option selected disabled value="">Choose a State...</option>
@@ -246,7 +265,7 @@
                                  </select>
                                  <div class="invalid-tooltip">Please select a valid State.</div>
                               </div>
-                              <div class="col-md-4 position-relative">
+                              <div class="col-md-3 position-relative">
                                  <label class="form-label" for="citySelect">City</label>
                                  <select class="form-select" id="citySelect" required>
                                     <option selected disabled value="">Choose a City...</option>
@@ -257,6 +276,18 @@
                                     <option>Chandigarh</option>
                                  </select>
                                  <div class="invalid-tooltip">Please select a valid City.</div>
+                              </div>
+                              <div class="col-md-3 position-relative">
+                                 <label class="form-label" for="plumberSelect">Plumber</label>
+                                 <select class="form-select" id="plumberSelect" required>
+                                    <option selected disabled value="">Choose a Plumber...</option>
+                                    <option>Rakesh Plumbing Services</option>
+                                    <option>CityFix Plumbing</option>
+                                    <option>HydroFlow Experts</option>
+                                    <option>WaterLine Solutions</option>
+                                    <option>QuickFix Plumbers</option>
+                                 </select>
+                                 <div class="invalid-tooltip">Please select a valid Plumber.</div>
                               </div>
                           
                         <div class="wizard-footer d-flex justify-content-end gap-2 col-lg-12 col-md-12 col-sm-12 mt-3">
@@ -271,218 +302,239 @@
               <!-- Filter Form end -->
             </div>
           </div>
+          
           <!-- Container-fluid starts-->
           <div class="container-fluid">
             <div class="row">
               <!-- Zero Configuration  Starts-->
               <div class="col-sm-12">
                 <div class="card">
-                  <div class="card-header pb-0 card-no-border">
-                   <div class="row">
-                     <div class="col-8">
-                       <h4 class="mb-3 ">Complain Request List</h4>
-                     </div>
-                     <div class="col-4">
-                         <div class="pb-3">
-                            <div class="d-flex justify-content-end align-items-center flex-wrap">
-                               <div class="d-flex align-items-center gap-2">
-                                  <div class="text-center"><a class="btn btn-success" href="AddService.html"><i class="fa fa-plus me-3"> Add</i></a></div>
-                               </div>
-                            </div>
-                         </div>
-                     </div>
-                   </div>
-                  </div>
                   <div class="card-body">
                     <div class="table-responsive">
                       <table class="display" id="basic-1">
                         <thead>
                           <tr>
-                            <th>Complain No</th>
-                            <th>Problem Image</th>
-                            <th>Problems</th>
-                            <th>Address</th>
-                            <th>Name</th>
-                            <th>Date</th>
+                            <th>Complain No.</th>
+                            <th>Problem</th>
+                            <th>Customer Name</th>
+                            <th>Customer Address</th>
+                            <th>Plumber</th>
+                            <th>Arrival Date</th>
                             <th>Action</th>
                           </tr>
                         </thead>
                         <tbody>
-                          <tr>
-                            <td>121</td>
-                            <td>
-                              <img src="https://img.freepik.com/premium-photo/high-angle-view-faucet-bathroom_1048944-22476116.jpg?uid=R200955547&ga=GA1.1.654450088.1747735592&semt=ais_items_boosted&w=740" 
-                                   alt="Water Leakage" 
-                                   width="60" height="60" 
-                                   style="object-fit: cover; border-radius: 8px;">
-                            </td>
-                            <td>Continuous leak from pipe under sink</td>
-                            <td>Shop No. 18, Ground Floor, Silver Plaza, Morbi</td>
-                            <td>Ravi Patel</td>
-                            <td>2025-06-06</td>
-                            <td> 
-                              <ul class="action"> 
-                                <li class="edit badge badge-warning">
-                                  <a href="AddService.html"><i class="fa fa-pencil text-white" aria-hidden="true" title="Edit"></i></a>
-                                </li>
-                                <li class="delete badge badge-danger">
-                                  <a href="#"><i class="fa fa-check-circle text-white" aria-hidden="true" title="Complete"></i></a>
-                                </li>
-                              </ul>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>122</td>
-                            <td><img src="https://img.freepik.com/free-photo/close-up-water-running_1161-84.jpg?uid=R200955547&ga=GA1.1.654450088.1747735592&semt=ais_items_boosted&w=740" alt="Leaky Faucet" width="60" height="60" style="object-fit: cover; border-radius: 8px;"></td>
-                            <td>Leaky faucet dripping continuously</td>
-                            <td>Green Park Society, Block B, Rajkot</td>
-                            <td>Meena Shah</td>
-                            <td>2025-06-05</td>
-                            <td>
-                              <ul class="action">
-                                <li class="edit badge badge-warning"><a href="AddService.html"><i class="fa fa-pencil text-white" aria-hidden="true" title="Edit"></i></a></li>
-                                <li class="delete badge badge-danger"><a href="#"><i class="fa fa-check-circle text-white" aria-hidden="true" title="Complete"></i></a></li>
-                              </ul>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td>123</td>
-                            <td><img src="https://img.freepik.com/premium-photo/flushing-water-toilet-bathroom_9083-8788.jpg?uid=R200955547&ga=GA1.1.654450088.1747735592&semt=ais_items_boosted&w=740" alt="Overflowing Toilet" width="60" height="60" style="object-fit: cover; border-radius: 8px;"></td>
-                            <td>Toilet water overflowing on flush</td>
-                            <td>206, Riddhi Apartment, Surat</td>
-                            <td>Karan Joshi</td>
-                            <td>2025-06-04</td>
-                            <td>
-                              <ul class="action">
-                                <li class="edit badge badge-warning"><a href="AddService.html"><i class="fa fa-pencil text-white" aria-hidden="true" title="Edit"></i></a></li>
-                                <li class="delete badge badge-danger"><a href="#"><i class="fa fa-check-circle text-white" aria-hidden="true" title="Complete"></i></a></li>
-                              </ul>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td>124</td>
-                            <td><img src="https://img.freepik.com/premium-photo/sewer-pipe-leak-bad-old-plumbing-water-leakage-inside-concrete-wall-rusty-damaged-building-structure_43300-5517.jpg?uid=R200955547&ga=GA1.1.654450088.1747735592&semt=ais_items_boosted&w=740" alt="Pipe Crack" width="60" height="60" style="object-fit: cover; border-radius: 8px;"></td>
-                            <td>Crack in wall pipe causing damp patches</td>
-                            <td>3rd Floor, Shyam Villa, Ahmedabad</td>
-                            <td>Priya Desai</td>
-                            <td>2025-06-03</td>
-                            <td>
-                              <ul class="action">
-                                <li class="edit badge badge-warning"><a href="AddService.html"><i class="fa fa-pencil text-white" aria-hidden="true" title="Edit"></i></a></li>
-                                <li class="delete badge badge-danger"><a href="#"><i class="fa fa-check-circle text-white" aria-hidden="true" title="Complete"></i></a></li>
-                              </ul>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td>125</td>
-                            <td><img src="https://img.freepik.com/free-photo/woman-fixing-kitchen-sink_53876-139620.jpg?uid=R200955547&ga=GA1.1.654450088.1747735592&semt=ais_items_boosted&w=740" alt="Washing Machine Leak" width="60" height="60" style="object-fit: cover; border-radius: 8px;"></td>
-                            <td>Water leaking from washing machine connection</td>
-                            <td>Plot 14, Krishna Nagar, Morbi</td>
-                            <td>Ramesh Vora</td>
-                            <td>2025-06-03</td>
-                            <td>
-                              <ul class="action">
-                                <li class="edit badge badge-warning"><a href="AddService.html"><i class="fa fa-pencil text-white" aria-hidden="true" title="Edit"></i></a></li>
-                                <li class="delete badge badge-danger"><a href="#"><i class="fa fa-check-circle text-white" aria-hidden="true" title="Complete"></i></a></li>
-                              </ul>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td>126</td>
-                            <td><img src="https://img.freepik.com/premium-photo/water-damage-household-insurance-after-pipe-burst-flood-basement-garage-with-mold_157125-15250.jpg?uid=R200955547&ga=GA1.1.654450088.1747735592&semt=ais_items_boosted&w=740" alt="Ceiling Leak" width="60" height="60" style="object-fit: cover; border-radius: 8px;"></td>
-                            <td>Ceiling leak during rain</td>
-                            <td>Flat No. 12, Vraj Residency, Bhuj</td>
-                            <td>Dipali Mehta</td>
-                            <td>2025-06-02</td>
-                            <td>
-                              <ul class="action">
-                                <li class="edit badge badge-warning"><a href="AddService.html"><i class="fa fa-pencil text-white" aria-hidden="true" title="Edit"></i></a></li>
-                                <li class="delete badge badge-danger"><a href="#"><i class="fa fa-check-circle text-white" aria-hidden="true" title="Complete"></i></a></li>
-                              </ul>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td>127</td>
-                            <td><img src="https://img.freepik.com/free-photo/swirl-water-going-down-sink_158538-13954.jpg?uid=R200955547&ga=GA1.1.654450088.1747735592&semt=ais_items_boosted&w=740" alt="Clogged Drain" width="60" height="60" style="object-fit: cover; border-radius: 8px;"></td>
-                            <td>Clogged drain causing backflow</td>
-                            <td>Hanuman Nagar, Street 5, Vadodara</td>
-                            <td>Chirag Bhatt</td>
-                            <td>2025-06-02</td>
-                            <td>
-                              <ul class="action">
-                                <li class="edit badge badge-warning"><a href="AddService.html"><i class="fa fa-pencil text-white" aria-hidden="true" title="Edit"></i></a></li>
-                                <li class="delete badge badge-danger"><a href="#"><i class="fa fa-check-circle text-white" aria-hidden="true" title="Complete"></i></a></li>
-                              </ul>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td>128</td>
-                            <td><img src="https://img.freepik.com/free-photo/closeup-grayscale-shot-showerhead-with-water-dripping-down_181624-20446.jpg?uid=R200955547&ga=GA1.1.654450088.1747735592&semt=ais_items_boosted&w=740" alt="Broken Shower Tap" width="60" height="60" style="object-fit: cover; border-radius: 8px;"></td>
-                            <td>Shower tap broken off from wall</td>
-                            <td>Gokul Nagar, Main Road, Gandhinagar</td>
-                            <td>Sneha Raval</td>
-                            <td>2025-06-01</td>
-                            <td>
-                              <ul class="action">
-                                <li class="edit badge badge-warning"><a href="AddService.html"><i class="fa fa-pencil text-white" aria-hidden="true" title="Edit"></i></a></li>
-                                <li class="delete badge badge-danger"><a href="#"><i class="fa fa-check-circle text-white" aria-hidden="true" title="Complete"></i></a></li>
-                              </ul>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td>129</td>
-                            <td><img src="https://img.freepik.com/free-photo/white-kitchen-sink-faucet-close-up_58702-2359.jpg?uid=R200955547&ga=GA1.1.654450088.1747735592&semt=ais_items_boosted&w=740" alt="Rusty Pipe" width="60" height="60" style="object-fit: cover; border-radius: 8px;"></td>
-                            <td>Rusty pipe weakening water flow</td>
-                            <td>Near Bus Stand, Mandvi</td>
-                            <td>Parth Panchal</td>
-                            <td>2025-06-01</td>
-                            <td>
-                              <ul class="action">
-                                <li class="edit badge badge-warning"><a href="AddService.html"><i class="fa fa-pencil text-white" aria-hidden="true" title="Edit"></i></a></li>
-                                <li class="delete badge badge-danger"><a href="#"><i class="fa fa-check-circle text-white" aria-hidden="true" title="Complete"></i></a></li>
-                              </ul>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td>130</td>
-                            <td><img src="https://img.freepik.com/premium-photo/full-frame-shot-old-door_1048944-30497986.jpg?uid=R200955547&ga=GA1.1.654450088.1747735592&semt=ais_items_boosted&w=740" alt="Roof Pipe Leak" width="60" height="60" style="object-fit: cover; border-radius: 8px;"></td>
-                            <td>Roof pipe leak dripping in hall</td>
-                            <td>Yash Tower, Sector 7, Jamnagar</td>
-                            <td>Ritika Shah</td>
-                            <td>2025-05-31</td>
-                            <td>
-                              <ul class="action">
-                                <li class="edit badge badge-warning"><a href="AddService.html"><i class="fa fa-pencil text-white" aria-hidden="true" title="Edit"></i></a></li>
-                                <li class="delete badge badge-danger"><a href="#"><i class="fa fa-check-circle text-white" aria-hidden="true" title="Complete"></i></a></li>
-                              </ul>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td>131</td>
-                            <td><img src="https://img.freepik.com/premium-photo/close-up-faucet-wall_1048944-18054966.jpg?uid=R200955547&ga=GA1.1.654450088.1747735592&semt=ais_items_boosted&w=740" alt="Floor Water Logging" width="60" height="60" style="object-fit: cover; border-radius: 8px;"></td>
-                            <td>Kitchen floor water logging due to hidden leak</td>
-                            <td>Flat 5A, Shivam Heights, Rajkot</td>
-                            <td>Jay Parmar</td>
-                            <td>2025-05-30</td>
-                            <td>
-                              <ul class="action">
-                                <li class="edit badge badge-warning"><a href="AddService.html"><i class="fa fa-pencil text-white" aria-hidden="true" title="Edit"></i></a></li>
-                                <li class="delete badge badge-danger"><a href="#"><i class="fa fa-check-circle text-white" aria-hidden="true" title="Complete"></i></a></li>
-                              </ul>
-                            </td>
-                          </tr>
-
-
-                        </tbody>
+                            <tr>
+                              <td>CN-1001</td>
+                              <td>Tap Leakage</td>
+                              <td>Rakesh Mehta</td>
+                              <td>123, MG Road, Mumbai</td>
+                              <td>Plumber A</td>
+                              <td>2025-06-01</td>
+                              <td>
+                                <ul class="action list-unstyled d-flex gap-2 m-0 justify-content-center">
+                                  <li class="edit badge badge-warning" title="Edit">
+                                    <a href="AddService.html"><i class="fa fa-pencil text-white"></i></a>
+                                  </li>
+                                  <li class="delete badge badge-info" title="View">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#serviceDetailsModal"><i class="fa fa-eye text-white"></i></a>
+                                  </li>
+                                  <li class="delete badge badge-danger" title="Complete">
+                                    <a href="#"><i class="fa fa-check-circle text-white"></i></a>
+                                  </li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>CN-1002</td>
+                              <td>Pipe Burst</td>
+                              <td>Sunil Sharma</td>
+                              <td>45, Park Avenue, Delhi</td>
+                              <td>Plumber B</td>
+                              <td>2025-06-02</td>
+                              <td>
+                                <ul class="action list-unstyled d-flex gap-2 m-0 justify-content-center">
+                                  <li class="edit badge badge-warning" title="Edit">
+                                    <a href="AddService.html"><i class="fa fa-pencil text-white"></i></a>
+                                  </li>
+                                  <li class="delete badge badge-info" title="View">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#serviceDetailsModal"><i class="fa fa-eye text-white"></i></a>
+                                  </li>
+                                  <li class="delete badge badge-danger" title="Complete">
+                                    <a href="#"><i class="fa fa-check-circle text-white"></i></a>
+                                  </li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>CN-1003</td>
+                              <td>Clogged Drain</td>
+                              <td>Priya Mehta</td>
+                              <td>78, Lake View, Pune</td>
+                              <td>Plumber C</td>
+                              <td>2025-06-03</td>
+                              <td>
+                                <ul class="action list-unstyled d-flex gap-2 m-0 justify-content-center">
+                                  <li class="edit badge badge-warning" title="Edit">
+                                    <a href="AddService.html"><i class="fa fa-pencil text-white"></i></a>
+                                  </li>
+                                  <li class="delete badge badge-info" title="View">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#serviceDetailsModal"><i class="fa fa-eye text-white"></i></a>
+                                  </li>
+                                  <li class="delete badge badge-danger" title="Complete">
+                                    <a href="#"><i class="fa fa-check-circle text-white"></i></a>
+                                  </li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>CN-1004</td>
+                              <td>Faucet Replacement</td>
+                              <td>Amit Joshi</td>
+                              <td>22, Green Park, Jaipur</td>
+                              <td>Plumber D</td>
+                              <td>2025-06-04</td>
+                              <td>
+                                <ul class="action list-unstyled d-flex gap-2 m-0 justify-content-center">
+                                  <li class="edit badge badge-warning" title="Edit">
+                                    <a href="AddService.html"><i class="fa fa-pencil text-white"></i></a>
+                                  </li>
+                                  <li class="delete badge badge-info" title="View">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#serviceDetailsModal"><i class="fa fa-eye text-white"></i></a>
+                                  </li>
+                                  <li class="delete badge badge-danger" title="Complete">
+                                    <a href="#"><i class="fa fa-check-circle text-white"></i></a>
+                                  </li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>CN-1005</td>
+                              <td>Leak in Bathroom</td>
+                              <td>Rohit Desai</td>
+                              <td>11, MG Road, Surat</td>
+                              <td>Plumber E</td>
+                              <td>2025-06-05</td>
+                              <td>
+                                <ul class="action list-unstyled d-flex gap-2 m-0 justify-content-center">
+                                  <li class="edit badge badge-warning" title="Edit">
+                                    <a href="AddService.html"><i class="fa fa-pencil text-white"></i></a>
+                                  </li>
+                                  <li class="delete badge badge-info" title="View">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#serviceDetailsModal"><i class="fa fa-eye text-white"></i></a>
+                                  </li>
+                                  <li class="delete badge badge-danger" title="Complete">
+                                    <a href="#"><i class="fa fa-check-circle text-white"></i></a>
+                                  </li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>CN-1006</td>
+                              <td>Toilet Flush Issue</td>
+                              <td>Jyoti Singh</td>
+                              <td>56, Station Road, Ahmedabad</td>
+                              <td>Plumber F</td>
+                              <td>2025-06-06</td>
+                              <td>
+                                <ul class="action list-unstyled d-flex gap-2 m-0 justify-content-center">
+                                  <li class="edit badge badge-warning" title="Edit">
+                                    <a href="AddService.html"><i class="fa fa-pencil text-white"></i></a>
+                                  </li>
+                                  <li class="delete badge badge-info" title="View">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#serviceDetailsModal"><i class="fa fa-eye text-white"></i></a>
+                                  </li>
+                                  <li class="delete badge badge-danger" title="Complete">
+                                    <a href="#"><i class="fa fa-check-circle text-white"></i></a>
+                                  </li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>CN-1007</td>
+                              <td>Pipe Corrosion</td>
+                              <td>Sunita Reddy</td>
+                              <td>44, Ring Road, Hyderabad</td>
+                              <td>Plumber G</td>
+                              <td>2025-06-07</td>
+                              <td>
+                                <ul class="action list-unstyled d-flex gap-2 m-0 justify-content-center">
+                                  <li class="edit badge badge-warning" title="Edit">
+                                    <a href="AddService.html"><i class="fa fa-pencil text-white"></i></a>
+                                  </li>
+                                  <li class="delete badge badge-info" title="View">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#serviceDetailsModal"><i class="fa fa-eye text-white"></i></a>
+                                  </li>
+                                  <li class="delete badge badge-danger" title="Complete">
+                                    <a href="#"><i class="fa fa-check-circle text-white"></i></a>
+                                  </li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>CN-1008</td>
+                              <td>Water Pressure Issue</td>
+                              <td>Rajesh Kumar</td>
+                              <td>19, Central Avenue, Kolkata</td>
+                              <td>Plumber H</td>
+                              <td>2025-06-08</td>
+                              <td>
+                                <ul class="action list-unstyled d-flex gap-2 m-0 justify-content-center">
+                                  <li class="edit badge badge-warning" title="Edit">
+                                    <a href="AddService.html"><i class="fa fa-pencil text-white"></i></a>
+                                  </li>
+                                  <li class="delete badge badge-info" title="View">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#serviceDetailsModal"><i class="fa fa-eye text-white"></i></a>
+                                  </li>
+                                  <li class="delete badge badge-danger" title="Complete">
+                                    <a href="#"><i class="fa fa-check-circle text-white"></i></a>
+                                  </li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>CN-1009</td>
+                              <td>Drain Blockage</td>
+                              <td>Preeti Shah</td>
+                              <td>90, MG Road, Chennai</td>
+                              <td>Plumber I</td>
+                              <td>2025-06-09</td>
+                              <td>
+                                <ul class="action list-unstyled d-flex gap-2 m-0 justify-content-center">
+                                  <li class="edit badge badge-warning" title="Edit">
+                                    <a href="AddService.html"><i class="fa fa-pencil text-white"></i></a>
+                                  </li>
+                                  <li class="delete badge badge-info" title="View">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#serviceDetailsModal"><i class="fa fa-eye text-white"></i></a>
+                                  </li>
+                                  <li class="delete badge badge-danger" title="Complete">
+                                    <a href="#"><i class="fa fa-check-circle text-white"></i></a>
+                                  </li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>CN-1010</td>
+                              <td>Water Heater Fault</td>
+                              <td>Vijay Kumar</td>
+                              <td>32, Park Street, Bangalore</td>
+                              <td>Plumber J</td>
+                              <td>2025-06-10</td>
+                              <td>
+                                <ul class="action list-unstyled d-flex gap-2 m-0 justify-content-center">
+                                  <li class="edit badge badge-warning" title="Edit">
+                                    <a href="AddService.html"><i class="fa fa-pencil text-white"></i></a>
+                                  </li>
+                                  <li class="delete badge badge-info" title="View">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#serviceDetailsModal"><i class="fa fa-eye text-white"></i></a>
+                                  </li>
+                                  <li class="delete badge badge-danger" title="Complete">
+                                    <a href="#"><i class="fa fa-check-circle text-white"></i></a>
+                                  </li>
+                                </ul>
+                              </td>
+                            </tr>
+                          </tbody>
                       </table>
                     </div>
                   </div>

@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script>
+window.onload = function() {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	title: {
+		text: ""
+	},
+	data: [{
+		type: "pie",
+		startAngle: 240,
+		yValueFormatString: "##0.00\"%\"",
+		indexLabel: "{label} {y}",
+	dataPoints: [
+  { y: 25, label: "No Water Supply" },
+  { y: 20, label: "Leakage in Pipeline" },
+  { y: 18, label: "Tank Overflow" },
+  { y: 12, label: "Drainage Blockage" },
+  { y: 10, label: "Low Water Pressure" },
+  { y: 8, label: "Tap or Mixer Broken" },
+  { y: 7, label: "Water Heater Not Working" }
+]
+	}]
+});
+chart.render();
+
+}
+</script>
+</head>
+<body>
+<div id="chartContainer" style="height: 370px; width: 100%;"></div>
+<script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+</body>
+</html>

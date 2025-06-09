@@ -195,7 +195,26 @@
             </div>
         <!-- Page Sidebar Ends-->
         <div class="page-body">
-         
+          <div class="container-fluid">
+            <div class="page-title">
+              <div class="row">
+                <div class="col-6">
+                  <h4>Plumber </h4>
+                </div>
+                <div class="col-6">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">                                       
+                        <svg class="stroke-icon">
+                          <use href="assets/svg/icon-sprite.svg#stroke-home"></use>
+                        </svg></a></li>
+                    <!-- <li class="breadcrumb-item">Plumber </li> -->
+                    <li class="breadcrumb-item active">Plumber List</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+          
           <!-- Container-fluid starts-->
           <div class="container-fluid">
             <div class="row">
@@ -205,7 +224,16 @@
                   <div class="card-header pb-0 card-no-border">
                    <div class="row">
                      <div class="col-8">
-                       <h4 class="mb-3 ">Payment History: (Raj)</h4>
+                       <h4 class="mb-3 ">Plumber List</h4>
+                     </div>
+                     <div class="col-4">
+                         <div class="pb-3">
+                            <div class="d-flex justify-content-end align-items-center flex-wrap">
+                               <div class="d-flex align-items-center gap-2">
+                                  <div class="text-center"><a class="btn btn-success" href="Plumber-add.html"><i class="fa fa-plus me-3"> Add</i></a></div>
+                               </div>
+                            </div>
+                         </div>
                      </div>
                    </div>
                   </div>
@@ -214,95 +242,178 @@
                       <table class="display" id="basic-1">
                         <thead>
                           <tr>
-                            <th>Payment No.</th>
-                            <th>Last Payment</th>
-                            <th>Payed Amount</th>
-                            <th>Pending Amount</th>
-                            <th>Payment Date</th>
-                            <th>Remark</th>
+                            <th>Complain No.</th>
+                            <th>Customer Name</th>
+                            <th>Address</th>
+                            <th>Mo Number</th>
+                            <th>Wp Number</th>
+                            <th> Date</th>
+                            <th>Action</th>
                           </tr>
                         </thead>
                         <tbody>
-                          <tr>
-                            <td>#PMT001</td>
-                            <td>₹2,000</td>
-                            <td>₹1,500</td>
-                            <td>₹500</td>
-                            <td>2025-06-01</td>
-                            <td>Partial payment received</td>
-                          </tr>
-                          <tr>
-                            <td>#PMT002</td>
-                            <td>₹1,200</td>
-                            <td>₹1,200</td>
-                            <td>₹0</td>
-                            <td>2025-06-02</td>
-                            <td>Full payment done</td>
-                          </tr>
-                          <tr>
-                            <td>#PMT003</td>
-                            <td>₹1,500</td>
-                            <td>₹1,000</td>
-                            <td>₹500</td>
-                            <td>2025-06-03</td>
-                            <td>Balance pending</td>
-                          </tr>
-                          <tr>
-                            <td>#PMT004</td>
-                            <td>₹2,500</td>
-                            <td>₹2,500</td>
-                            <td>₹0</td>
-                            <td>2025-06-04</td>
-                            <td>Paid via UPI</td>
-                          </tr>
-                          <tr>
-                            <td>#PMT005</td>
-                            <td>₹3,000</td>
-                            <td>₹1,500</td>
-                            <td>₹1,500</td>
-                            <td>2025-06-05</td>
-                            <td>EMI mode</td>
-                          </tr>
-                          <tr>
-                            <td>#PMT006</td>
-                            <td>₹750</td>
-                            <td>₹750</td>
-                            <td>₹0</td>
-                            <td>2025-06-06</td>
-                            <td>Cash received</td>
-                          </tr>
-                          <tr>
-                            <td>#PMT007</td>
-                            <td>₹4,000</td>
-                            <td>₹3,000</td>
-                            <td>₹1,000</td>
-                            <td>2025-06-07</td>
-                            <td>Pending cheque clearance</td>
-                          </tr>
-                          <tr>
-                            <td>#PMT008</td>
-                            <td>₹1,800</td>
-                            <td>₹1,800</td>
-                            <td>₹0</td>
-                            <td>2025-06-08</td>
-                            <td>Paid in full</td>
-                          </tr>
-                          <tr>
-                            <td>#PMT009</td>
-                            <td>₹2,200</td>
-                            <td>₹1,200</td>
-                            <td>₹1,000</td>
-                            <td>2025-06-08</td>
-                            <td>Customer promised balance in 3 days</td>
-                          </tr>
-                          <tr>
-                            <td>#PMT010</td>
-                            <td>₹900</td>
-                            <td>₹900</td>
-                            <td>₹0</td>
-                            <td>2025-06-09</td>
-                            <td>Final payment</td>
-                          </tr>
+                          <tr class="jsgrid-row">
+                              <td>CMP-001</td>
+                              <td>Ravi Sharma</td>
+                              <td>101, Green Avenue, Ahmedabad</td>
+                              <td>+91 9876543210</td>
+                              <td>+91 9123456780</td>
+                              <td>2025-06-09</td>
+                              <td class="jsgrid-cell" style="width: 90px;">
+                                <ul class="action list-unstyled d-flex gap-2 mb-0">
+                                  <li class="edit badge bg-danger" style="cursor:pointer;" title="Approved">
+                                    <a href="#" class="text-white approved-btn">
+                                      <i class="fa fa-check text-white"></i>
+                                    </a>
+                                  </li>
+                                  <li class="delete badge bg-info" style="cursor:pointer;" title="Delete">
+                                    <a href="#" class="text-white">
+                                      <i class="fa fa-trash-o text-white"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr class="jsgrid-row">
+                              <td>CMP-001</td>
+                              <td>Ravi Sharma</td>
+                              <td>101, Green Avenue, Ahmedabad</td>
+                              <td>+91 9876543210</td>
+                              <td>+91 9123456780</td>
+                              <td>2025-06-09</td>
+                              <td class="jsgrid-cell" style="width: 90px;">
+                                <ul class="action list-unstyled d-flex gap-2 mb-0">
+                                  <li class="edit badge bg-danger" title="Approved"><a href="#" class="text-white approved-btn"><i class="fa fa-check text-white"></i></a></li>
+                                  <li class="delete badge bg-info" title="Delete"><a href="#" class="text-white"><i class="fa fa-trash-o text-white"></i></a></li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr class="jsgrid-row">
+                              <td>CMP-002</td>
+                              <td>Meera Joshi</td>
+                              <td>Sunrise Residency, Vadodara</td>
+                              <td>+91 9823456701</td>
+                              <td>+91 9123456789</td>
+                              <td>2025-06-08</td>
+                              <td class="jsgrid-cell" style="width: 90px;">
+                                <ul class="action list-unstyled d-flex gap-2 mb-0">
+                                  <li class="edit badge bg-danger" title="Approved"><a href="#" class="text-white approved-btn"><i class="fa fa-check text-white"></i></a></li>
+                                  <li class="delete badge bg-info" title="Delete"><a href="#" class="text-white"><i class="fa fa-trash-o text-white"></i></a></li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr class="jsgrid-row">
+                              <td>CMP-003</td>
+                              <td>Jignesh Patel</td>
+                              <td>Royal Heights, Rajkot</td>
+                              <td>+91 9988776655</td>
+                              <td>+91 9988776644</td>
+                              <td>2025-06-07</td>
+                              <td class="jsgrid-cell" style="width: 90px;">
+                                <ul class="action list-unstyled d-flex gap-2 mb-0">
+                                  <li class="edit badge bg-danger" title="Approved"><a href="#" class="text-white approved-btn"><i class="fa fa-check text-white"></i></a></li>
+                                  <li class="delete badge bg-info" title="Delete"><a href="#" class="text-white"><i class="fa fa-trash-o text-white"></i></a></li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr class="jsgrid-row">
+                              <td>CMP-004</td>
+                              <td>Kiran Mehta</td>
+                              <td>Galaxy Tower, Surat</td>
+                              <td>+91 9000011122</td>
+                              <td>+91 9000011133</td>
+                              <td>2025-06-06</td>
+                              <td class="jsgrid-cell" style="width: 90px;">
+                                <ul class="action list-unstyled d-flex gap-2 mb-0">
+                                  <li class="edit badge bg-danger" title="Approved"><a href="#" class="text-white approved-btn"><i class="fa fa-check text-white"></i></a></li>
+                                  <li class="delete badge bg-info" title="Delete"><a href="#" class="text-white"><i class="fa fa-trash-o text-white"></i></a></li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr class="jsgrid-row">
+                              <td>CMP-005</td>
+                              <td>Sneha Raval</td>
+                              <td>Laxmi Villa, Jamnagar</td>
+                              <td>+91 9876500011</td>
+                              <td>+91 9876500022</td>
+                              <td>2025-06-05</td>
+                              <td class="jsgrid-cell" style="width: 90px;">
+                                <ul class="action list-unstyled d-flex gap-2 mb-0">
+                                  <li class="edit badge bg-danger" title="Approved"><a href="#" class="text-white approved-btn"><i class="fa fa-check text-white"></i></a></li>
+                                  <li class="delete badge bg-info" title="Delete"><a href="#" class="text-white"><i class="fa fa-trash-o text-white"></i></a></li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr class="jsgrid-row">
+                              <td>CMP-006</td>
+                              <td>Alok Verma</td>
+                              <td>Shiv Residency, Bhavnagar</td>
+                              <td>+91 9944556677</td>
+                              <td>+91 9944556688</td>
+                              <td>2025-06-04</td>
+                              <td class="jsgrid-cell" style="width: 90px;">
+                                <ul class="action list-unstyled d-flex gap-2 mb-0">
+                                  <li class="edit badge bg-danger" title="Approved"><a href="#" class="text-white approved-btn"><i class="fa fa-check text-white"></i></a></li>
+                                  <li class="delete badge bg-info" title="Delete"><a href="#" class="text-white"><i class="fa fa-trash-o text-white"></i></a></li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr class="jsgrid-row">
+                              <td>CMP-007</td>
+                              <td>Neha Shah</td>
+                              <td>Green City, Gandhinagar</td>
+                              <td>+91 9011223344</td>
+                              <td>+91 9011223355</td>
+                              <td>2025-06-03</td>
+                              <td class="jsgrid-cell" style="width: 90px;">
+                                <ul class="action list-unstyled d-flex gap-2 mb-0">
+                                  <li class="edit badge bg-danger" title="Approved"><a href="#" class="text-white approved-btn"><i class="fa fa-check text-white"></i></a></li>
+                                  <li class="delete badge bg-info" title="Delete"><a href="#" class="text-white"><i class="fa fa-trash-o text-white"></i></a></li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr class="jsgrid-row">
+                              <td>CMP-008</td>
+                              <td>Bhavesh Desai</td>
+                              <td>Rosewood Park, Mehsana</td>
+                              <td>+91 9898989898</td>
+                              <td>+91 9898989797</td>
+                              <td>2025-06-02</td>
+                              <td class="jsgrid-cell" style="width: 90px;">
+                                <ul class="action list-unstyled d-flex gap-2 mb-0">
+                                  <li class="edit badge bg-danger" title="Approved"><a href="#" class="text-white approved-btn"><i class="fa fa-check text-white"></i></a></li>
+                                  <li class="delete badge bg-info" title="Delete"><a href="#" class="text-white"><i class="fa fa-trash-o text-white"></i></a></li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr class="jsgrid-row">
+                              <td>CMP-009</td>
+                              <td>Nilesh Bhatt</td>
+                              <td>Satyam Bungalow, Vapi</td>
+                              <td>+91 9123456781</td>
+                              <td>+91 9123456782</td>
+                              <td>2025-06-01</td>
+                              <td class="jsgrid-cell" style="width: 90px;">
+                                <ul class="action list-unstyled d-flex gap-2 mb-0">
+                                  <li class="edit badge bg-danger" title="Approved"><a href="#" class="text-white approved-btn"><i class="fa fa-check text-white"></i></a></li>
+                                  <li class="delete badge bg-info" title="Delete"><a href="#" class="text-white"><i class="fa fa-trash-o text-white"></i></a></li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr class="jsgrid-row">
+                              <td>CMP-010</td>
+                              <td>Ritika Kaur</td>
+                              <td>Silver Heights, Anand</td>
+                              <td>+91 9800001234</td>
+                              <td>+91 9800004321</td>
+                              <td>2025-05-31</td>
+                              <td class="jsgrid-cell" style="width: 90px;">
+                                <ul class="action list-unstyled d-flex gap-2 mb-0">
+                                  <li class="edit badge bg-danger" title="Approved"><a href="#" class="text-white approved-btn"><i class="fa fa-check text-white"></i></a></li>
+                                  <li class="delete badge bg-info" title="Delete"><a href="#" class="text-white"><i class="fa fa-trash-o text-white"></i></a></li>
+                                </ul>
+                              </td>
+                            </tr>    
                         </tbody>
                       </table>
                     </div>
@@ -326,50 +437,30 @@
             </footer>
       </div>
     </div>
- <!-- Modal Structure -->
-              <div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="paymentModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content border-0 rounded-3">
-                    <div class="modal-header bg-primary text-white">
-                      <h5 class="modal-title text-white" id="paymentModalLabel ">Plumber Payment</h5>
-                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                  
-                    <div class="modal-body">
-                      <!-- Contact Info -->
-                      <div class="mb-3">
-                        <label class="form-label"><i class="fa fa-user me-2 text-primary"></i>Plumber Name:</label>
-                        <p class="mb-1 fw-bold">Ramesh Patel</p>
-                      </div>
-                    
-                      <div class="mb-3">
-                        <label class="form-label"><i class="fa fa-phone me-2 text-success"></i>Contact:</label>
-                        <p class="mb-1 fw-bold">+91 98765 43210</p>
-                      </div>
-                    
-                      <div class="mb-3">
-                        <label class="form-label"><i class="fa fa-inr me-2 text-warning"></i>Plumber Amount:</label>
-                        <p class="mb-1 fw-bold">₹1,200.00</p>
-                      </div>
-                    
-                      <!-- Inputs -->
-                      <div class="mb-3">
-                        <label for="remark" class="form-label">Remark</label>
-                        <input type="text" class="form-control" id="remark" placeholder="Enter remark...">
-                      </div>
-                    
-                      <div class="mb-3">
-                        <label for="payAmount" class="form-label">Pay Amount</label>
-                        <input type="number" class="form-control" id="payAmount" placeholder="Enter amount...">
-                      </div>
-                    </div>
-                  
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-success w-100">Pay</button>
-                    </div>
+    <!-- Toast container -->
+            <div class="toast-container position-fixed top-0 end-0 p-3">
+              <div id="plumberToast" class="toast align-items-center text-bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="d-flex">
+                  <div class="toast-body">
+                    Plumber Approved successfully.
                   </div>
+                  <button  type="button"  class="btn-close btn-close-white me-2 m-auto"  data-bs-dismiss="toast"  aria-label="Close"></button>
                 </div>
               </div>
+            </div>
+          
+  <!-- // Select all approved buttons -->
+      <script>
+  document.querySelectorAll('.approved-btn').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      // Show toast
+      const toastEl = document.getElementById('plumberToast');
+      const toast = new bootstrap.Toast(toastEl);
+      toast.show();
+    });
+  });
+</script>
     <!-- latest jquery-->
     <script src="../assets/js/jquery.min.js"></script>
     <!-- Bootstrap js-->
