@@ -114,7 +114,7 @@
       <!-- Page Body Start-->
       <div class="page-body-wrapper">
         <!-- Page Sidebar Start-->
-        <div class="sidebar-wrapper" data-layout="stroke-svg">
+          <div class="sidebar-wrapper" data-layout="stroke-svg">
                <div class="logo-wrapper">
                   <a href="index.html"><img class="img-fluid w-75" src="assets/images/logo/logo-unique_it.webp" alt=""></a>
                   <div class="back-btn"><i class="fa fa-angle-left"> </i></div>
@@ -145,50 +145,65 @@
                         <span class="lan-2">Dasboard</span></a>
                      </li>
                      <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i>
-                     <a class="sidebar-link" href="Problem-list.html">
-                     <i class="fa fa-home text-white" aria-hidden="true"></i>
-                     <span class="lan-2">Problem List</span></a>
+                     <a class="sidebar-link" href="AddService.html">
+                     <i class="fa fa-plus-circle text-white" aria-hidden="true"></i>
+                     <span class="lan-2">Complain Add</span></a>
                   </li>
-                     <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i>
-                     <a class="sidebar-link" href="ComplainRequest-list.html">
-                     <i class="fa fa-home text-white" aria-hidden="true"></i>
-                     <span class="lan-2">Complain Request List</span></a>
+                  <li class="sidebar-list">
+                     <i class="fa fa-thumb-tack"></i>
+                     <a class="sidebar-link" href="Working-Service.html">
+                        <i class="fa fa-cogs text-white" aria-hidden="true"></i>
+                        <span class="lan-2">Working Complaints</span>
+                     </a>
                   </li>
-                  <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i>
+
+                  <li class="sidebar-list">
+                     <i class="fa fa-thumb-tack"></i>
+                     <a class="sidebar-link" href="Completed-Service.html">
+                        <i class="fa fa-check-circle text-white" aria-hidden="true"></i>
+                        <span class="lan-2">Completed Complaints</span>
+                     </a>
+                  </li>
+
+                  <li class="sidebar-list">
+                     <i class="fa fa-thumb-tack"></i>
+                     <a class="sidebar-link" href="Plumberlist.html">
+                        <i class="fa fa-user text-white" aria-hidden="true"></i>
+                        <span class="lan-2">Plumber List</span>
+                     </a>
+                  </li>
+
+                  <li class="sidebar-list">
+                     <i class="fa fa-thumb-tack"></i>
+                     <a class="sidebar-link" href="Plumberreport.html">
+                        <i class="fa fa-file-text text-white" aria-hidden="true"></i>
+                        <span class="lan-2">Plumber Report</span>
+                     </a>
+                  </li>
+                  <li class="sidebar-list">
+                     <i class="fa fa-thumb-tack"></i>
                      <a class="sidebar-link" href="ComplainReport-list.html">
-                     <i class="fa fa-home text-white" aria-hidden="true"></i>
-                     <span class="lan-2">Complain Report</span></a>
+                        <i class="fa fa-file-text text-white" aria-hidden="true"></i>
+                        <span class="lan-2">Complaint Report</span>
+                     </a>
                   </li>
-                  <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i>
-                     <a class="sidebar-link" href="ComplainStatus.html">
-                     <i class="fa fa-home text-white" aria-hidden="true"></i>
-                     <span class="lan-2">Complain Status</span></a>
+
+                  <li class="sidebar-list">
+                     <i class="fa fa-thumb-tack"></i>
+                     <a class="sidebar-link" href="Problem-list.html">
+                        <i class="fa fa-exclamation-triangle text-white" aria-hidden="true"></i>
+                        <span class="lan-2">Problem List</span>
+                     </a>
                   </li>
-                     <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i>
-                        <a class="sidebar-link" href="Working-Service.html">
-                        <i class="fa fa-home text-white" aria-hidden="true"></i>
-                        <span class="lan-2">Working Complain </span></a>
-                     </li>
-                     <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i>
-                        <a class="sidebar-link" href="Completed-Service.html">
-                        <i class="fa fa-home text-white" aria-hidden="true"></i>
-                        <span class="lan-2">Completed Complain </span></a>
-                     </li>
-                     <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i>
-                        <a class="sidebar-link" href="Plumberlist.html">
-                        <i class="fa fa-home text-white" aria-hidden="true"></i>
-                        <span class="lan-2">Plumber</span></a>
-                     </li>
-                      <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i>
-                  <a class="sidebar-link" href="Plumberreport.html">
-                  <i class="fa fa-home text-white" aria-hidden="true"></i>
-                  <span class="lan-2">Plumber Report</span></a>
-                </li> 
-                     <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i>
-                        <a class="sidebar-link" href="Payment.html">
-                        <i class="fa fa-home text-white" aria-hidden="true"></i>
-                        <span class="lan-2">Payment</span></a>
-                     </li>
+
+                  <li class="sidebar-list">
+                     <i class="fa fa-thumb-tack"></i>
+                     <a class="sidebar-link" href="Payment.html">
+                        <i class="fa fa-credit-card text-white" aria-hidden="true"></i>
+                        <span class="lan-2">Payment</span>
+                     </a>
+                  </li>
+
                      <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>
                   </div>
                </nav>
@@ -583,51 +598,55 @@
             </footer>
       </div>
     </div>
- <!-- Modal -->
-                <div class="modal fade" id="serviceDetailsModal" tabindex="-1" aria-labelledby="serviceDetailsLabel" aria-hidden="true">
+  <!-- serviceDetailsModal -->
+<div class="modal fade" id="serviceDetailsModal" tabindex="-1" aria-labelledby="serviceDetailsLabel" aria-hidden="true">
   <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content">
-    
-      <div class="modal-header bg-primary ">
+
+      <div class="modal-header bg-primary">
         <h5 class="modal-title text-white" id="serviceDetailsLabel">Service Details</h5>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      
+
       <div class="modal-body">
-        <div class="row">
-          <!-- Media (5 columns) -->
+        <div class="row gy-4"> 
+
+          <!-- Media (Videos + Images) -->
           <div class="col-md-5">
-            <!-- Videos -->
-            <div class="mb-4">
-              <h6 class="text-muted">Before Video:</h6>
-              <video controls width="100%" height="200" poster="/assets/images/plumb.png">
+
+            <!-- Before Video -->
+            <div>
+              <h6 class="text-muted fw-semibold">Before Video:</h6>
+              <video controls width="100%" height="200" poster="/assets/images/plumb.png" class="rounded">
                 <source src="https://cdn.shutterstock.com/shutterstock/videos/1079480894/preview/stock-footage-leaking-water-running-from-ceiling-light-fixture-due-to-burst-water-pipe.webm" type="video/webm" />
                 Your browser does not support the video tag.
               </video>
             </div>
 
-            <div class="mb-4">
-              <h6 class="text-muted">After Video:</h6>
-              <video controls width="100%" height="200" poster="/assets/images/plumb.png">
+            <!-- After Video -->
+            <div class="mt-4">
+              <h6 class="text-muted fw-semibold">After Video:</h6>
+              <video controls width="100%" height="200" poster="/assets/images/plumb.png" class="rounded">
                 <source src="https://cdn.videvo.net/videvo_files/video/free/2016-09/large_watermarked/160826_032_Faucet_HD_1080p_preview.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
 
-            <!-- Images -->
-            <div class="mb-3 text-center working-service-model-img">
-              <h6 class="text-muted">Before Image:</h6>
-              <img src="https://img.freepik.com/free-photo/view-fantasy-landscape-with-surreal-running-water-tap-world-water-day-awareness_23-2151182065.jpg?w=740" width="100%" class="img-fluid rounded mb-2" alt="Before Problem" />
-              <h6 class="text-muted">After Image:</h6>
-              <img src="https://img.freepik.com/free-photo/clean-kitchen-modern-sink_53876-132107.jpg?w=740" width="100%" class="img-fluid rounded" alt="After Repair" />
+            <!-- Before & After Images -->
+            <div class="mt-4 text-center working-service-model-img">
+              <h6 class="text-muted fw-semibold">Before Image:</h6>
+              <img src="https://img.freepik.com/free-photo/view-fantasy-landscape-with-surreal-running-water-tap-world-water-day-awareness_23-2151182065.jpg?w=740" alt="Before Problem" class="img-fluid rounded mb-3" />
+              <h6 class="text-muted fw-semibold">After Image:</h6>
+              <img src="https://img.freepik.com/free-photo/clean-kitchen-modern-sink_53876-132107.jpg?w=740" alt="After Repair" class="img-fluid rounded" />
             </div>
           </div>
 
-          <!-- Details (7 columns) -->
+          <!-- Details -->
           <div class="col-md-7">
+
             <!-- Problem Description -->
-            <h6>Problem Description:</h6>
-            <p>Leakage problem - water leakage detected in kitchen piping causing dampness and damage.</p>
+            <h6 class="mb-2">Problem Description <span class="badge bg-danger ms-2">🔁 Re-Complaint</span></h6>
+            <p class="mb-4">Leakage problem - water leakage detected in kitchen piping causing dampness and damage.</p>
 
             <!-- Status and Date -->
             <table class="table table-bordered mb-4">
@@ -638,13 +657,13 @@
                 </tr>
                 <tr>
                   <th>Date</th>
-                  <td>05-01-2025</td>
+                  <td>05-03-2025</td>
                 </tr>
               </tbody>
             </table>
 
             <!-- Customer Details -->
-            <h6>Customer Details:</h6>
+            <h6 class="mb-3">Customer Details:</h6>
             <table class="table table-bordered mb-4">
               <tbody>
                 <tr><th style="width: 150px;">Customer Code</th><td>B7218</td></tr>
@@ -656,18 +675,43 @@
             </table>
 
             <!-- Plumber Details -->
-            <h6>Plumber Details:</h6>
+            <h6 class="mb-3">Plumber Details:</h6>
             <table class="table table-bordered">
               <tbody>
                 <tr><th style="width: 150px;">Name</th><td>Mr. Rajesh Kumar</td></tr>
                 <tr><th>Contact Number</th><td>+91 9123456789</td></tr>
                 <tr><th>Whatsapp Number</th><td>+91 9876543210</td></tr>
-                <tr>
-                  <th>Rating</th>
-                  <td><span class="badge bg-success">4.5 <i class="fa fa-star"></i></span></td>
-                </tr>
               </tbody>
             </table>
+
+            <!-- Re-Complaint History -->
+            <h6 class="text-danger fw-bold mb-3 mt-3">Re-Complaint History:</h6>
+            <div class="table-responsive mb-4">
+              <table class="table table-bordered table-hover table-sm align-middle">
+                <thead class="table-light">
+                  <tr>
+                    <th style="width: 40px;">#</th>
+                    <th style="width: 110px;">Date</th>
+                    <th>Description</th>
+                    <th style="width: 120px;">Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>15-03-2025</td>
+                    <td>Water leakage not fully resolved in kitchen pipe joint.</td>
+                    <td><span class="badge bg-warning text-dark">Re-Complain</span></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>22-03-2025</td>
+                    <td>Leakage appeared again near the sink drain.</td>
+                    <td><span class="badge bg-info text-white">Re-Complain</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>

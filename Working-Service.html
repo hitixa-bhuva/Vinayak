@@ -114,7 +114,7 @@
       <!-- Page Body Start-->
       <div class="page-body-wrapper">
         <!-- Page Sidebar Start-->
-        <div class="sidebar-wrapper" data-layout="stroke-svg">
+         <div class="sidebar-wrapper" data-layout="stroke-svg">
                <div class="logo-wrapper">
                   <a href="index.html"><img class="img-fluid w-75" src="assets/images/logo/logo-unique_it.webp" alt=""></a>
                   <div class="back-btn"><i class="fa fa-angle-left"> </i></div>
@@ -145,50 +145,65 @@
                         <span class="lan-2">Dasboard</span></a>
                      </li>
                      <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i>
-                     <a class="sidebar-link" href="Problem-list.html">
-                     <i class="fa fa-home text-white" aria-hidden="true"></i>
-                     <span class="lan-2">Problem List</span></a>
+                     <a class="sidebar-link" href="AddService.html">
+                     <i class="fa fa-plus-circle text-white" aria-hidden="true"></i>
+                     <span class="lan-2">Complain Add</span></a>
                   </li>
-                     <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i>
-                     <a class="sidebar-link" href="ComplainRequest-list.html">
-                     <i class="fa fa-home text-white" aria-hidden="true"></i>
-                     <span class="lan-2">Complain Request List</span></a>
+                  <li class="sidebar-list">
+                     <i class="fa fa-thumb-tack"></i>
+                     <a class="sidebar-link" href="Working-Service.html">
+                        <i class="fa fa-cogs text-white" aria-hidden="true"></i>
+                        <span class="lan-2">Working Complaints</span>
+                     </a>
                   </li>
-                  <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i>
+
+                  <li class="sidebar-list">
+                     <i class="fa fa-thumb-tack"></i>
+                     <a class="sidebar-link" href="Completed-Service.html">
+                        <i class="fa fa-check-circle text-white" aria-hidden="true"></i>
+                        <span class="lan-2">Completed Complaints</span>
+                     </a>
+                  </li>
+
+                  <li class="sidebar-list">
+                     <i class="fa fa-thumb-tack"></i>
+                     <a class="sidebar-link" href="Plumberlist.html">
+                        <i class="fa fa-user text-white" aria-hidden="true"></i>
+                        <span class="lan-2">Plumber List</span>
+                     </a>
+                  </li>
+
+                  <li class="sidebar-list">
+                     <i class="fa fa-thumb-tack"></i>
+                     <a class="sidebar-link" href="Plumberreport.html">
+                        <i class="fa fa-file-text text-white" aria-hidden="true"></i>
+                        <span class="lan-2">Plumber Report</span>
+                     </a>
+                  </li>
+                  <li class="sidebar-list">
+                     <i class="fa fa-thumb-tack"></i>
                      <a class="sidebar-link" href="ComplainReport-list.html">
-                     <i class="fa fa-home text-white" aria-hidden="true"></i>
-                     <span class="lan-2">Complain Report</span></a>
+                        <i class="fa fa-file-text text-white" aria-hidden="true"></i>
+                        <span class="lan-2">Complaint Report</span>
+                     </a>
                   </li>
-                  <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i>
-                     <a class="sidebar-link" href="ComplainStatus.html">
-                     <i class="fa fa-home text-white" aria-hidden="true"></i>
-                     <span class="lan-2">Complain Status</span></a>
+
+                  <li class="sidebar-list">
+                     <i class="fa fa-thumb-tack"></i>
+                     <a class="sidebar-link" href="Problem-list.html">
+                        <i class="fa fa-exclamation-triangle text-white" aria-hidden="true"></i>
+                        <span class="lan-2">Problem List</span>
+                     </a>
                   </li>
-                     <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i>
-                        <a class="sidebar-link" href="Working-Service.html">
-                        <i class="fa fa-home text-white" aria-hidden="true"></i>
-                        <span class="lan-2">Working Complain </span></a>
-                     </li>
-                     <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i>
-                        <a class="sidebar-link" href="Completed-Service.html">
-                        <i class="fa fa-home text-white" aria-hidden="true"></i>
-                        <span class="lan-2">Completed Complain </span></a>
-                     </li>
-                     <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i>
-                        <a class="sidebar-link" href="Plumberlist.html">
-                        <i class="fa fa-home text-white" aria-hidden="true"></i>
-                        <span class="lan-2">Plumber</span></a>
-                     </li>
-                      <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i>
-                  <a class="sidebar-link" href="Plumberreport.html">
-                  <i class="fa fa-home text-white" aria-hidden="true"></i>
-                  <span class="lan-2">Plumber Report</span></a>
-                </li> 
-                     <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i>
-                        <a class="sidebar-link" href="Payment.html">
-                        <i class="fa fa-home text-white" aria-hidden="true"></i>
-                        <span class="lan-2">Payment</span></a>
-                     </li>
+
+                  <li class="sidebar-list">
+                     <i class="fa fa-thumb-tack"></i>
+                     <a class="sidebar-link" href="Payment.html">
+                        <i class="fa fa-credit-card text-white" aria-hidden="true"></i>
+                        <span class="lan-2">Payment</span>
+                     </a>
+                  </li>
+
                      <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>
                   </div>
                </nav>
@@ -315,6 +330,7 @@
                           <tr>
                             <th>Complain No.</th>
                             <th>Problem</th>
+                            <th>Problem Image</th>
                             <th>Customer Name</th>
                             <th>Customer Address</th>
                             <th>Plumber</th>
@@ -327,6 +343,7 @@
                             <tr>
                               <td>CN-1001</td>
                               <td>Leaking pipe in kitchen</td>
+                              <td><img src="https://img.freepik.com/premium-photo/water-damage-household-insurance-after-pipe-burst-flood-basement-garage-with-mold_157125-15250.jpg?uid=R200955547&ga=GA1.1.654450088.1747735592&semt=ais_items_boosted&w=740" alt="Ceiling Leak" width="60" height="60" style="object-fit: cover; border-radius: 8px;"></td>
                               <td>Ravi Patel</td>
                               <td>12, Green Park, Surat</td>
                               <td>Jay Soni</td>
@@ -365,6 +382,7 @@
                             <tr>
                               <td>CN-1002</td>
                               <td>Shower broken</td>
+                              <td><img src="https://img.freepik.com/free-photo/woman-fixing-kitchen-sink_53876-139620.jpg?uid=R200955547&ga=GA1.1.654450088.1747735592&semt=ais_items_boosted&w=740" alt="Washing Machine Leak" width="60" height="60" style="object-fit: cover; border-radius: 8px;"></td>
                               <td>Kavita Mehta</td>
                               <td>7, Lake View, Rajkot</td>
                               <td>Harsh Modi</td>
@@ -403,6 +421,7 @@
                             <tr>
                               <td>CN-1003</td>
                               <td>Toilet flush issue</td>
+                              <td><img src="https://img.freepik.com/premium-photo/sewer-pipe-leak-bad-old-plumbing-water-leakage-inside-concrete-wall-rusty-damaged-building-structure_43300-5517.jpg?uid=R200955547&ga=GA1.1.654450088.1747735592&semt=ais_items_boosted&w=740" alt="Pipe Crack" width="60" height="60" style="object-fit: cover; border-radius: 8px;"></td>
                               <td>Rahul Desai</td>
                               <td>Flat 204, Sunrise Apt, Morbi</td>
                               <td>Manav Thakkar</td>
@@ -441,6 +460,7 @@
                             <tr>
                               <td>CN-1004</td>
                               <td>Tap not working in bathroom</td>
+                              <td><img src="https://img.freepik.com/premium-photo/flushing-water-toilet-bathroom_9083-8788.jpg?uid=R200955547&ga=GA1.1.654450088.1747735592&semt=ais_items_boosted&w=740" alt="Overflowing Toilet" width="60" height="60" style="object-fit: cover; border-radius: 8px;"></td>
                               <td>Neha Shah</td>
                               <td>56, Pearl City, Ahmedabad</td>
                               <td>Ronak Mehta</td>
@@ -479,6 +499,7 @@
                             <tr>
                               <td>CN-1005</td>
                               <td>Water heater leakage</td>
+                              <td><img src="https://img.freepik.com/free-photo/close-up-water-running_1161-84.jpg?uid=R200955547&ga=GA1.1.654450088.1747735592&semt=ais_items_boosted&w=740" alt="Leaky Faucet" width="60" height="60" style="object-fit: cover; border-radius: 8px;"></td>
                               <td>Viral Bhatt</td>
                               <td>98, Riverdale Society, Vadodara</td>
                               <td>Darshan Shah</td>
@@ -517,6 +538,7 @@
                             <tr>
                               <td>CN-1006</td>
                               <td>Drainage blockage</td>
+                              <td><img src="https://img.freepik.com/free-photo/close-up-water-running_1161-84.jpg?uid=R200955547&ga=GA1.1.654450088.1747735592&semt=ais_items_boosted&w=740" alt="Leaky Faucet" width="60" height="60" style="object-fit: cover; border-radius: 8px;"></td>
                               <td>Sanjay Rana</td>
                               <td>Flat B3, Sai Residency, Bhavnagar</td>
                               <td>Chirag Vyas</td>
@@ -555,6 +577,7 @@
                             <tr>
                               <td>CN-1007</td>
                               <td>Geyser not working</td>
+                              <td><img src="https://img.freepik.com/free-photo/close-up-water-running_1161-84.jpg?uid=R200955547&ga=GA1.1.654450088.1747735592&semt=ais_items_boosted&w=740" alt="Leaky Faucet" width="60" height="60" style="object-fit: cover; border-radius: 8px;"></td>
                               <td>Pinal Joshi</td>
                               <td>Block 4A, Amrapali, Jamnagar</td>
                               <td>Jay Soni</td>
@@ -593,6 +616,7 @@
                             <tr>
                               <td>CN-1008</td>
                               <td>Water supply issue</td>
+                              <td><img src="https://img.freepik.com/free-photo/close-up-water-running_1161-84.jpg?uid=R200955547&ga=GA1.1.654450088.1747735592&semt=ais_items_boosted&w=740" alt="Leaky Faucet" width="60" height="60" style="object-fit: cover; border-radius: 8px;"></td>
                               <td>Manisha Chauhan</td>
                               <td>1st Floor, Sun Tower, Junagadh</td>
                               <td>Ronak Mehta</td>
@@ -631,6 +655,7 @@
                             <tr>
                               <td>CN-1009</td>
                               <td>Pipeline burst</td>
+                              <td><img src="https://img.freepik.com/free-photo/close-up-water-running_1161-84.jpg?uid=R200955547&ga=GA1.1.654450088.1747735592&semt=ais_items_boosted&w=740" alt="Leaky Faucet" width="60" height="60" style="object-fit: cover; border-radius: 8px;"></td>
                               <td>Hardik Shah</td>
                               <td>Om Plaza, Bharuch</td>
                               <td>Harsh Modi</td>
@@ -669,6 +694,7 @@
                             <tr>
                               <td>CN-1010</td>
                               <td>Bathroom drain slow</td>
+                              <td><img src="https://img.freepik.com/free-photo/close-up-water-running_1161-84.jpg?uid=R200955547&ga=GA1.1.654450088.1747735592&semt=ais_items_boosted&w=740" alt="Leaky Faucet" width="60" height="60" style="object-fit: cover; border-radius: 8px;"></td>
                               <td>Komal Bhatt</td>
                               <td>5B, Galaxy Heights, Vapi</td>
                               <td>Chirag Vyas</td>
@@ -707,6 +733,7 @@
                             <tr>
                               <td>CN-1011</td>
                               <td>Backflow issue</td>
+                              <td><img src="https://img.freepik.com/free-photo/close-up-water-running_1161-84.jpg?uid=R200955547&ga=GA1.1.654450088.1747735592&semt=ais_items_boosted&w=740" alt="Leaky Faucet" width="60" height="60" style="object-fit: cover; border-radius: 8px;"></td>
                               <td>Ramesh Dholakia</td>
                               <td>22, Dream Valley, Mehsana</td>
                               <td>Darshan Shah</td>
@@ -745,6 +772,7 @@
                             <tr>
                               <td>CN-1012</td>
                               <td>Rust in pipes</td>
+                              <td><img src="https://img.freepik.com/free-photo/close-up-water-running_1161-84.jpg?uid=R200955547&ga=GA1.1.654450088.1747735592&semt=ais_items_boosted&w=740" alt="Leaky Faucet" width="60" height="60" style="object-fit: cover; border-radius: 8px;"></td>
                               <td>Jignesh Kapadia</td>
                               <td>Hill View, Palanpur</td>
                               <td>Manav Thakkar</td>
@@ -951,10 +979,6 @@
                 <tr><th style="width: 150px;">Name</th><td>Mr. Rajesh Kumar</td></tr>
                 <tr><th>Contact Number</th><td>+91 9123456789</td></tr>
                 <tr><th>Whatsapp Number</th><td>+91 9876543210</td></tr>
-                <tr>
-                  <th>Rating</th>
-                  <td><span class="badge bg-success">4.5 <i class="fa fa-star"></i></span></td>
-                </tr>
               </tbody>
             </table>
 
@@ -975,13 +999,13 @@
                     <td>1</td>
                     <td>15-03-2025</td>
                     <td>Water leakage not fully resolved in kitchen pipe joint.</td>
-                    <td><span class="badge bg-warning text-dark">Re-Open</span></td>
+                    <td><span class="badge bg-warning text-dark">Re-Complain</span></td>
                   </tr>
                   <tr>
                     <td>2</td>
                     <td>22-03-2025</td>
                     <td>Leakage appeared again near the sink drain.</td>
-                    <td><span class="badge bg-info text-white">Under Review</span></td>
+                    <td><span class="badge bg-info text-white">Re-Complain</span></td>
                   </tr>
                 </tbody>
               </table>
