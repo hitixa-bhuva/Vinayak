@@ -114,7 +114,7 @@
       <!-- Page Body Start-->
       <div class="page-body-wrapper">
         <!-- Page Sidebar Start-->
-         <div class="sidebar-wrapper" data-layout="stroke-svg">
+          <div class="sidebar-wrapper" data-layout="stroke-svg">
                <div class="logo-wrapper">
                   <a href="index.html"><img class="img-fluid w-75" src="assets/images/logo/logo-unique_it.webp" alt=""></a>
                   <div class="back-btn"><i class="fa fa-angle-left"> </i></div>
@@ -172,7 +172,13 @@
                         <span class="lan-2">Plumber List</span>
                      </a>
                   </li>
-
+                  <li class="sidebar-list">
+                     <i class="fa fa-thumb-tack"></i>
+                     <a class="sidebar-link" href="Manufacturer.html">
+                        <i class="fa fa-industry text-white" aria-hidden="true"></i>
+                        <span class="lan-2">Manufacturer</span>
+                     </a>
+                  </li>
                   <li class="sidebar-list">
                      <i class="fa fa-thumb-tack"></i>
                      <a class="sidebar-link" href="Plumberreport.html">
@@ -268,6 +274,12 @@
                                  </select>
                                  <div class="invalid-tooltip">Please select a valid Problem.</div>
                               </div>
+                              <div class="col-sm-3">
+                          <div class="mb-3">
+                            <label class="required-validation">Customer Name</label>
+                            <input class="form-control" type="text" placeholder="Name">
+                          </div>
+                        </div>
                               <div class="col-md-3 position-relative">
                                  <label class="form-label" for="stateSelect">State</label>
                                  <select class="form-select" id="stateSelect" required>
@@ -304,6 +316,31 @@
                                  </select>
                                  <div class="invalid-tooltip">Please select a valid Plumber.</div>
                               </div>
+                              <div class="col-sm-3"> 
+                               <div class="mb-3">
+                                 <label class="required-validation">Manufacturer</label> 
+                                 <select class="form-select">
+                                   <option>Select An Option</option>
+                                   <option value="samsung">Samsung</option>
+                                   <option value="lg">LG</option>
+                                   <option value="sony">Sony</option>
+                                   <option value="panasonic">Panasonic</option>
+                                 </select>
+                               </div>
+                             </div>
+
+                             <div class="col-sm-3"> 
+                               <div class="mb-3">
+                                 <label class="required-validation">Brand</label> 
+                                 <select class="form-select">
+                                   <option>Select An Option</option>
+                                   <option value="bravia">Bravia</option>
+                                   <option value="vivobook">VivoBook</option>
+                                   <option value="inspiron">Inspiron</option>
+                                   <option value="galaxy">Galaxy</option>
+                                 </select>
+                               </div>
+                             </div>
                         <div class="wizard-footer d-flex justify-content-end gap-2 col-lg-12 col-md-12 col-sm-12 mt-3">
                           <button class="btn btn-primary" id="backbtn" type="submit">Search</button>
                           <button class="btn btn-danger" id="nextbtn" type="Clear">Clear</button>
@@ -366,8 +403,8 @@
                                       </a>
                                     </li>
                                     <li>
-                                      <a class="dropdown-item d-flex align-items-center gap-2" href="#">
-                                        <i class="fa fa-check-circle text-danger"></i> Complete
+                                      <a class="dropdown-item d-flex align-items-center gap-2" href="#" data-bs-toggle="modal" data-bs-target="#completeModal">
+                                          <i class="fa fa-check-circle text-danger"></i> Complete
                                       </a>
                                     </li>
                                     <li>
@@ -405,8 +442,8 @@
                                       </a>
                                     </li>
                                     <li>
-                                      <a class="dropdown-item d-flex align-items-center gap-2" href="#">
-                                        <i class="fa fa-check-circle text-danger"></i> Complete
+                                      <a class="dropdown-item d-flex align-items-center gap-2" href="#" data-bs-toggle="modal" data-bs-target="#completeModal">
+                                          <i class="fa fa-check-circle text-danger"></i> Complete
                                       </a>
                                     </li>
                                     <li>
@@ -444,8 +481,8 @@
                                       </a>
                                     </li>
                                     <li>
-                                      <a class="dropdown-item d-flex align-items-center gap-2" href="#">
-                                        <i class="fa fa-check-circle text-danger"></i> Complete
+                                      <a class="dropdown-item d-flex align-items-center gap-2" href="#" data-bs-toggle="modal" data-bs-target="#completeModal">
+                                          <i class="fa fa-check-circle text-danger"></i> Complete
                                       </a>
                                     </li>
                                     <li>
@@ -483,8 +520,8 @@
                                       </a>
                                     </li>
                                     <li>
-                                      <a class="dropdown-item d-flex align-items-center gap-2" href="#">
-                                        <i class="fa fa-check-circle text-danger"></i> Complete
+                                      <a class="dropdown-item d-flex align-items-center gap-2" href="#" data-bs-toggle="modal" data-bs-target="#completeModal">
+                                          <i class="fa fa-check-circle text-danger"></i> Complete
                                       </a>
                                     </li>
                                     <li>
@@ -522,8 +559,8 @@
                                       </a>
                                     </li>
                                     <li>
-                                      <a class="dropdown-item d-flex align-items-center gap-2" href="#">
-                                        <i class="fa fa-check-circle text-danger"></i> Complete
+                                      <a class="dropdown-item d-flex align-items-center gap-2" href="#" data-bs-toggle="modal" data-bs-target="#completeModal">
+                                          <i class="fa fa-check-circle text-danger"></i> Complete
                                       </a>
                                     </li>
                                     <li>
@@ -561,8 +598,8 @@
                                       </a>
                                     </li>
                                     <li>
-                                      <a class="dropdown-item d-flex align-items-center gap-2" href="#">
-                                        <i class="fa fa-check-circle text-danger"></i> Complete
+                                      <a class="dropdown-item d-flex align-items-center gap-2" href="#" data-bs-toggle="modal" data-bs-target="#completeModal">
+                                          <i class="fa fa-check-circle text-danger"></i> Complete
                                       </a>
                                     </li>
                                     <li>
@@ -600,8 +637,8 @@
                                       </a>
                                     </li>
                                     <li>
-                                      <a class="dropdown-item d-flex align-items-center gap-2" href="#">
-                                        <i class="fa fa-check-circle text-danger"></i> Complete
+                                      <a class="dropdown-item d-flex align-items-center gap-2" href="#" data-bs-toggle="modal" data-bs-target="#completeModal">
+                                          <i class="fa fa-check-circle text-danger"></i> Complete
                                       </a>
                                     </li>
                                     <li>
@@ -639,8 +676,8 @@
                                       </a>
                                     </li>
                                     <li>
-                                      <a class="dropdown-item d-flex align-items-center gap-2" href="#">
-                                        <i class="fa fa-check-circle text-danger"></i> Complete
+                                      <a class="dropdown-item d-flex align-items-center gap-2" href="#" data-bs-toggle="modal" data-bs-target="#completeModal">
+                                          <i class="fa fa-check-circle text-danger"></i> Complete
                                       </a>
                                     </li>
                                     <li>
@@ -678,8 +715,8 @@
                                       </a>
                                     </li>
                                     <li>
-                                      <a class="dropdown-item d-flex align-items-center gap-2" href="#">
-                                        <i class="fa fa-check-circle text-danger"></i> Complete
+                                      <a class="dropdown-item d-flex align-items-center gap-2" href="#" data-bs-toggle="modal" data-bs-target="#completeModal">
+                                          <i class="fa fa-check-circle text-danger"></i> Complete
                                       </a>
                                     </li>
                                     <li>
@@ -717,8 +754,8 @@
                                       </a>
                                     </li>
                                     <li>
-                                      <a class="dropdown-item d-flex align-items-center gap-2" href="#">
-                                        <i class="fa fa-check-circle text-danger"></i> Complete
+                                      <a class="dropdown-item d-flex align-items-center gap-2" href="#" data-bs-toggle="modal" data-bs-target="#completeModal">
+                                          <i class="fa fa-check-circle text-danger"></i> Complete
                                       </a>
                                     </li>
                                     <li>
@@ -756,8 +793,8 @@
                                       </a>
                                     </li>
                                     <li>
-                                      <a class="dropdown-item d-flex align-items-center gap-2" href="#">
-                                        <i class="fa fa-check-circle text-danger"></i> Complete
+                                      <a class="dropdown-item d-flex align-items-center gap-2" href="#" data-bs-toggle="modal" data-bs-target="#completeModal">
+                                          <i class="fa fa-check-circle text-danger"></i> Complete
                                       </a>
                                     </li>
                                     <li>
@@ -795,8 +832,8 @@
                                       </a>
                                     </li>
                                     <li>
-                                      <a class="dropdown-item d-flex align-items-center gap-2" href="#">
-                                        <i class="fa fa-check-circle text-danger"></i> Complete
+                                      <a class="dropdown-item d-flex align-items-center gap-2" href="#" data-bs-toggle="modal" data-bs-target="#completeModal">
+                                          <i class="fa fa-check-circle text-danger"></i> Complete
                                       </a>
                                     </li>
                                     <li>
@@ -911,7 +948,11 @@
 
           <!-- Media (Videos + Images) -->
           <div class="col-md-5">
-
+            <!-- Before & After Images -->
+            <div class="mt-4  working-service-model-img">
+              <h6 class="text-muted fw-semibold">Before Image:</h6>
+              <img src="https://img.freepik.com/free-photo/view-fantasy-landscape-with-surreal-running-water-tap-world-water-day-awareness_23-2151182065.jpg?w=740" alt="Before Problem" class="img-fluid rounded mb-3" />
+            </div>
             <!-- Before Video -->
             <div>
               <h6 class="text-muted fw-semibold">Before Video:</h6>
@@ -919,23 +960,6 @@
                 <source src="https://cdn.shutterstock.com/shutterstock/videos/1079480894/preview/stock-footage-leaking-water-running-from-ceiling-light-fixture-due-to-burst-water-pipe.webm" type="video/webm" />
                 Your browser does not support the video tag.
               </video>
-            </div>
-
-            <!-- After Video -->
-            <div class="mt-4">
-              <h6 class="text-muted fw-semibold">After Video:</h6>
-              <video controls width="100%" height="200" poster="/assets/images/plumb.png" class="rounded">
-                <source src="https://cdn.videvo.net/videvo_files/video/free/2016-09/large_watermarked/160826_032_Faucet_HD_1080p_preview.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-
-            <!-- Before & After Images -->
-            <div class="mt-4 text-center working-service-model-img">
-              <h6 class="text-muted fw-semibold">Before Image:</h6>
-              <img src="https://img.freepik.com/free-photo/view-fantasy-landscape-with-surreal-running-water-tap-world-water-day-awareness_23-2151182065.jpg?w=740" alt="Before Problem" class="img-fluid rounded mb-3" />
-              <h6 class="text-muted fw-semibold">After Image:</h6>
-              <img src="https://img.freepik.com/free-photo/clean-kitchen-modern-sink_53876-132107.jpg?w=740" alt="After Repair" class="img-fluid rounded" />
             </div>
           </div>
 
@@ -1022,6 +1046,83 @@
   </div>
 </div>
 
+<!-- compleate model  -->
+<!-- Modal -->
+<div class="modal fade" id="completeModal" tabindex="-1" aria-labelledby="completeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h5 class="modal-title" id="completeModalLabel">Complete Service</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body">
+        <div class="row">
+          <label class="mb-2"><b>Service Media:</b></label>
+
+          <!-- Image Upload -->
+          <div class="col-sm-6">
+                          <div class="mb-3">
+                            <label>Image:</label>
+                            <div class="image-upload-wrapper" id="imagePreviewBox">
+                              <span class="image-placeholder" id="imagePlaceholder">Add Image</span>
+                              <img id="previewImage" src="" alt="" style="display: none;" />
+
+                              <div class="image-upload-actions">
+                                <button type="button" onclick="document.getElementById('imageInput').click()">
+                                  ✏️
+                                </button>
+                                <button type="button" onclick="removeImage()">❌</button>
+                              </div>
+                            </div>
+                            
+                            <input type="file" id="imageInput" accept="image/*" onchange="previewImage(event)" />
+                          </div>
+                        </div>
+
+          <!-- Video Upload -->
+         <div class="col-sm-6">
+                             <div class="mb-3">
+                               <label>Video:</label>
+                               <div class="video-upload-wrapper" id="videoPreviewBox" style="position: relative;">
+                                 <span class="video-placeholder" id="videoPlaceholder">Add video</span>
+
+                                 <video id="previewVideo" style="display: none; width: 100%; height: auto;" muted>
+                                   Your browser does not support the video tag.
+                                 </video>
+                             
+                                 <div class="image-upload-actions">
+                                <button type="button" onclick="document.getElementById('videoInput').click()">
+                                  ✏️
+                                </button>
+                                <button type="button" onclick="removeVideo()">❌</button>
+                              </div>
+                               </div>
+                           
+                               <input type="file" id="videoInput" accept="video/*" onchange="previewVideo(event)" style="display: none;" />
+                             </div>
+                            </div>
+        </div>
+
+        <!-- Remarks -->
+        <div class="form-group mt-3">
+          <label for="remarkInput">Remarks:</label>
+          <textarea class="form-control" id="remarkInput" rows="3" placeholder="Enter remarks..."></textarea>
+        </div>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Save</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
     <!-- latest jquery-->
     <script src="assets/js/jquery.min.js"></script>
     <!-- Bootstrap js-->
@@ -1065,5 +1166,64 @@
   });
 </script>
 
+<!-- Service Media: img show -->
+<script>
+function previewImage(event) {
+  const input = event.target;
+  const file = input.files[0];
+  if (file) {
+    const reader = new FileReader();
+    reader.onload = function(e) {
+      document.getElementById('previewImage').src = e.target.result;
+      document.getElementById('previewImage').style.display = 'block';
+      document.getElementById('imagePlaceholder').style.display = 'none';
+    };
+    reader.readAsDataURL(file);
+  }
+}
+
+function removeImage() {
+  document.getElementById('imageInput').value = '';
+  document.getElementById('previewImage').src = '';
+  document.getElementById('previewImage').style.display = 'none';
+  document.getElementById('imagePlaceholder').style.display = 'block';
+}
+</script>
+<!-- Service Media: img show end-->
+<!-- Service Media: video show-->
+ <script>
+  function previewVideo(event) {
+    const video = document.getElementById('previewVideo');
+    const placeholder = document.getElementById('videoPlaceholder');
+    const file = event.target.files[0];
+
+    if (file) {
+      const videoURL = URL.createObjectURL(file);
+      video.src = videoURL;
+      video.style.display = 'block';
+      placeholder.style.display = 'none';
+
+      // Play on hover
+      video.addEventListener('mouseenter', () => video.play());
+      video.addEventListener('mouseleave', () => {
+        video.pause();
+        video.currentTime = 0;
+      });
+    }
+  }
+
+  function removeVideo() {
+    const video = document.getElementById('previewVideo');
+    const input = document.getElementById('videoInput');
+    const placeholder = document.getElementById('videoPlaceholder');
+
+    video.pause();
+    video.src = '';
+    video.style.display = 'none';
+    placeholder.style.display = 'inline';
+    input.value = '';
+  }
+</script>
+<!-- Service Media: video show-->
   </body>
 </html>

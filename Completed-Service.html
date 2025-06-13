@@ -114,7 +114,7 @@
       <!-- Page Body Start-->
       <div class="page-body-wrapper">
         <!-- Page Sidebar Start-->
-          <div class="sidebar-wrapper" data-layout="stroke-svg">
+           <div class="sidebar-wrapper" data-layout="stroke-svg">
                <div class="logo-wrapper">
                   <a href="index.html"><img class="img-fluid w-75" src="assets/images/logo/logo-unique_it.webp" alt=""></a>
                   <div class="back-btn"><i class="fa fa-angle-left"> </i></div>
@@ -172,7 +172,13 @@
                         <span class="lan-2">Plumber List</span>
                      </a>
                   </li>
-
+                  <li class="sidebar-list">
+                     <i class="fa fa-thumb-tack"></i>
+                     <a class="sidebar-link" href="Manufacturer.html">
+                        <i class="fa fa-industry text-white" aria-hidden="true"></i>
+                        <span class="lan-2">Manufacturer</span>
+                     </a>
+                  </li>
                   <li class="sidebar-list">
                      <i class="fa fa-thumb-tack"></i>
                      <a class="sidebar-link" href="Plumberreport.html">
@@ -310,7 +316,31 @@
                                  </select>
                                  <div class="invalid-tooltip">Please select a valid Plumber.</div>
                               </div>
-                          
+                              <div class="col-sm-3"> 
+                               <div class="mb-3">
+                                 <label class="required-validation">Manufacturer</label> 
+                                 <select class="form-select">
+                                   <option>Select An Option</option>
+                                   <option value="samsung">Samsung</option>
+                                   <option value="lg">LG</option>
+                                   <option value="sony">Sony</option>
+                                   <option value="panasonic">Panasonic</option>
+                                 </select>
+                               </div>
+                             </div>
+
+                             <div class="col-sm-3"> 
+                               <div class="mb-3">
+                                 <label class="required-validation">Brand</label> 
+                                 <select class="form-select">
+                                   <option>Select An Option</option>
+                                   <option value="bravia">Bravia</option>
+                                   <option value="vivobook">VivoBook</option>
+                                   <option value="inspiron">Inspiron</option>
+                                   <option value="galaxy">Galaxy</option>
+                                 </select>
+                               </div>
+                             </div>
                         <div class="wizard-footer d-flex justify-content-end gap-2 col-lg-12 col-md-12 col-sm-12 mt-3">
                           <button class="btn btn-primary" id="backbtn" type="submit">Search</button>
                           <button class="btn btn-danger" id="nextbtn" type="Clear">Clear</button>
